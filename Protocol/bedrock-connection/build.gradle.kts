@@ -20,8 +20,13 @@ repositories {
 }
 
 dependencies {
-    // compileOnly(libs.netty.transport.raknet)
-    api(project(":Network:transport-raknet"))
+    api(libs.netty.transport.raknet)
     api(project(":Protocol:bedrock-codec"))
     api(libs.snappy)
+}
+
+tasks.jar {
+    manifest {
+        attributes("Automatic-Module-Name" to "org.cloudburstmc.protocol.bedrock.connection")
+    }
 }

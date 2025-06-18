@@ -28,3 +28,9 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-annotations:2.18.0")
 
 }
+
+tasks.jar {
+    manifest {
+        attributes("Automatic-Module-Name" to "org.cloudburstmc.protocol.bedrock.codec")
+    }
+}

@@ -77,7 +77,7 @@ class MuCuteRelaySession internal constructor(
                 override fun onDisconnect(reason: String) {
                     println("Client disconnect: $reason")
                     runCatching {
-                        client?.disconnect()
+                        client?.disconnect(reason, false)
                     }
                     listeners.forEach {
                         runCatching {
@@ -128,7 +128,7 @@ class MuCuteRelaySession internal constructor(
                 override fun onDisconnect(reason: String) {
                     println("Server disconnect: $reason")
                     runCatching {
-                        server.disconnect()
+                        server.disconnect(reason, false)
                     }
                     listeners.forEach {
                         runCatching {

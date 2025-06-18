@@ -23,4 +23,11 @@ dependencies {
     api(libs.fastutil.int.obj.maps)
     api(libs.fastutil.obj.int.maps)
     api(libs.math)
+    api(libs.natives)
+}
+
+tasks.jar {
+    manifest {
+        attributes("Automatic-Module-Name" to "org.cloudburstmc.protocol.common")
+    }
 }
