@@ -67,4 +67,3 @@ Feel free to open a pull request, suggest new features, report bugs, or help imp
 
 **Please use MuCuteRelay at your own risk.**  
 We **DO NOT** take responsibility for any bans or punishments that may occur as a result of using this cheat.
-
