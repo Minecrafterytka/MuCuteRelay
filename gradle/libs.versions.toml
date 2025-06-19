@@ -25,7 +25,6 @@ netty-codec = { group = "io.netty", name = "netty-codec", version.ref = "netty" 
 netty-transport = { group = "io.netty", name = "netty-transport", version.ref = "netty" }
 netty-transport-native-unix-common = { group = "io.netty", name = "netty-transport-native-unix-common", version.ref = "netty" }
 expiringmap = { group = "net.jodah", name = "expiringmap", version.ref = "expiringmap" }
-natives = { group = "com.nukkitx", name = "natives", version = "1.0.3" }
 network-common = { group = "com.nukkitx.network", name = "common", version.ref = "network" }
 fastutil-bom = { group = "org.cloudburstmc.fastutil", name = "bom", version.ref = "fastutil" }
 fastutil-long-common = { group = "org.cloudburstmc.fastutil.commons", name = "long-common" }
